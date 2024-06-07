@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="rhickwel valdez">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/images/jar.png" type="image/x-icon">
+
+    <title>Love Jar</title>
+</head>
+<body>
+    <main class="container">
+        <img 
+            src="assets/images/jar.png" 
+            alt="jar" 
+            class="jar"
+            onclick="openModal()"
+        >
+
+        <article class="instruction-card">
+            <h1>Love Jar</h1>
+            
+            <p>
+                Within this jar you will find notes from me to you. You can pick one to start your day off with a smile.
+            </p>
+
+            <ul>
+                <li><span class="circle red"></span>Messages</li>
+                <li><span class="circle green"></span>Random Pictues</li>
+                <li><span class="circle blue"></span>Random Videos</li>
+            </ul>
+
+            <p>
+                I love you each day more than the day before. 
+                <br>
+                Mwuahhh 😘. - Hanu
+            </p>
+        </article>
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="modal-header" class="modal-header">
+                <div class="label">
+                    <span id="tag"></span>
+                    <h2 id="modal-title" class="title"></h2>
+                </div>
+                <span class="close">&times;</span>
+            </div>     
+            
+            <div class="modal-main"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
